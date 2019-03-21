@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const AboutDiv = styled.div`
+const ProductDiv = styled.div`
 width: 100%;
 height: 100vh;
 `;
@@ -16,17 +16,17 @@ height: min-content;
 `;
 
 
-const About = () => {
+const Products = () => {
     return (
-        <AboutDiv>
+        <ProductDiv>
             <HeaderDiv>
-            <Header>About Us</Header>
+            <Header>Available Products</Header>
             </HeaderDiv>
 
-        </AboutDiv>
+        </ProductDiv>
     )
 
 }
 
 
-export default About;
+export default Products;
