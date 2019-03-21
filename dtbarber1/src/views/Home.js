@@ -3,6 +3,7 @@ import styled from "styled-components";
 import dtbimg from "../assets/dtbpic2.jpg";
 import Schedules from "./Schedules";
 import About from "./About";
+import Products from "./Products";
 
 
 const HomeViewContainer = styled.div`
@@ -31,9 +32,10 @@ const Home = props => {
     return (
       <HomeViewContainer>
         <HomeDiv>
-            <Header>DownTown Barber</Header>
+            <Header>Welcome To DownTown Barber</Header>
         </HomeDiv>
         <Schedules/>
+        <Products/>
         <About/>
       </HomeViewContainer>
 
