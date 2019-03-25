@@ -22,16 +22,26 @@ const Gents = styled.div`
 const BarbersBox = styled.div`
 width: 50vw;
 height: 50vh;
-border: 2px solid red;
+border: 2px solid black;
 display: flex;
 `;
 
 const Name = styled.h1`
-
+height: min-content;
+text-decoration: underline;
 `;
 
-const Schedule = styled.h2`
-margin-top: 10%;
+const ScheduleDiv = styled.div`
+margin-left: 5%;
+`;
+
+const Days = styled.div`
+font-size: 1.5rem;
+font-weight: bold;
+`;
+
+const Hours = styled.div`
+
 `;
 
 const ImageDiv = styled.div`
@@ -46,18 +56,35 @@ const Schedules = () => {
             <BarbersContainer>
                 <Ladies>
                     <BarbersBox>
-                        <h1>Jodi</h1>
+                    <ScheduleDiv>
+                            <Name>Jodi</Name>
+                            <Days>
+                                S - 8-4 <br/>
+                                M - off<br/>
+                                T - off<br/>
+                                W - off<br/>
+                                Th - 10-6<br/>
+                                F - 10-6<br/>
+                                Sa - 8-4
+                            </Days>
+                        </ScheduleDiv>
+                        <ImageDiv>
+                        <img src={anthonyimg} width={220} height={328} />
+                        </ImageDiv>
                     </BarbersBox>
                     <BarbersBox>
-                        <Name>Natalie</Name>
-                        <Schedule>S <br/>
-                            M <br/>
-                            T <br/>
-                            W <br/>
-                            Th <br/>
-                            F <br/>
-                            Sa
-                        </Schedule>
+                        <ScheduleDiv>
+                            <Name>Natalie</Name>
+                            <Days>
+                                S - 8-4 <br/>
+                                M - off<br/>
+                                T - off<br/>
+                                W - off<br/>
+                                Th - 10-6<br/>
+                                F - 10-6<br/>
+                                Sa - 8-4
+                            </Days>
+                        </ScheduleDiv>
                         <ImageDiv>
                         <img src={anthonyimg} width={220} height={328} />
                         </ImageDiv>
@@ -65,10 +92,38 @@ const Schedules = () => {
                 </Ladies>
                 <Gents>
                     <BarbersBox>
-                        <h1>Robbie</h1>
+                    <ScheduleDiv>
+                            <Name>Robbie</Name>
+                            <Days>
+                                S - 8-4 <br/>
+                                M - off<br/>
+                                T - off<br/>
+                                W - off<br/>
+                                Th - 10-6<br/>
+                                F - 10-6<br/>
+                                Sa - 8-4
+                            </Days>
+                        </ScheduleDiv>
+                        <ImageDiv>
+                        <img src={anthonyimg} width={220} height={328} />
+                        </ImageDiv>
                     </BarbersBox>
                     <BarbersBox>
-                        <h1>Rob</h1>
+                    <ScheduleDiv>
+                            <Name>Rob</Name>
+                            <Days>
+                                S - 8-4 <br/>
+                                M - off<br/>
+                                T - off<br/>
+                                W - off<br/>
+                                Th - 10-6<br/>
+                                F - 10-6<br/>
+                                Sa - 8-4
+                            </Days>
+                        </ScheduleDiv>
+                        <ImageDiv>
+                        <img src={anthonyimg} width={220} height={328} />
+                        </ImageDiv>
                     </BarbersBox>
                 </Gents>
             </BarbersContainer>
