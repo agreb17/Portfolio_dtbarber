@@ -32,7 +32,7 @@ text-decoration: underline;
 `;
 
 const ScheduleDiv = styled.div`
-margin-left: 5%;
+margin: 0 0 1% 5%;
 `;
 
 const Days = styled.div`
