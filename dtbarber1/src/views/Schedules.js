@@ -40,13 +40,11 @@ font-size: 1.5rem;
 font-weight: bold;
 `;
 
-const Hours = styled.div`
-
-`;
-
 const ImageDiv = styled.div`
+background-image: url(${anthonyimg});
+width: 300px;
+background-position: -312px -342px;
 margin-left: auto;
-// background: url(${anthonyimg});
 `;
 
 
@@ -68,9 +66,7 @@ const Schedules = () => {
                                 Sa - 8-4
                             </Days>
                         </ScheduleDiv>
-                        <ImageDiv>
-                        <img src={anthonyimg} width={220} height={328} />
-                        </ImageDiv>
+                        <ImageDiv/>
                     </BarbersBox>
                     <BarbersBox>
                         <ScheduleDiv>
@@ -85,9 +81,7 @@ const Schedules = () => {
                                 Sa - 8-4
                             </Days>
                         </ScheduleDiv>
-                        <ImageDiv>
-                        <img src={anthonyimg} width={220} height={328} />
-                        </ImageDiv>
+                        <ImageDiv/>
                     </BarbersBox>
                 </Ladies>
                 <Gents>
@@ -104,9 +98,7 @@ const Schedules = () => {
                                 Sa - 8-4
                             </Days>
                         </ScheduleDiv>
-                        <ImageDiv>
-                        <img src={anthonyimg} width={220} height={328} />
-                        </ImageDiv>
+                        <ImageDiv/>
                     </BarbersBox>
                     <BarbersBox>
                     <ScheduleDiv>
@@ -121,9 +113,7 @@ const Schedules = () => {
                                 Sa - 8-4
                             </Days>
                         </ScheduleDiv>
-                        <ImageDiv>
-                        <img src={anthonyimg} width={220} height={328} />
-                        </ImageDiv>
+                        <ImageDiv/>
                     </BarbersBox>
                 </Gents>
             </BarbersContainer>
