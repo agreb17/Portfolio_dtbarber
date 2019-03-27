@@ -7,6 +7,17 @@ width: 100%;
 height: 100vh;
 `;
 
+const HeaderDiv = styled.div`
+height: 10vh;
+display: flex;
+justify-content: center;
+`;
+
+const Header = styled.div`
+font-size: 3rem;
+font-weight: bold;
+`;
+
 const BarbersContainer = styled.div`
 display: flex;
 `;
@@ -20,20 +31,26 @@ const Gents = styled.div`
 `;
 
 const BarbersBox = styled.div`
-width: 50vw;
-height: 50vh;
-border: 2px solid black;
-display: flex;
+width: 100vw;
+height: 85vh;
+display: block;
+text-align: center;
+margin: 20px;
 `;
 
 const Name = styled.h1`
 height: min-content;
 text-decoration: underline;
+margin-top: 0;
 `;
 
-const ScheduleDiv = styled.div`
-margin: 0 0 1% 5%;
+const InfoDiv = styled.div`
+
 `;
+
+// const AnotherDiv = styled.div`
+// margin: 0 auto;
+// `;
 
 const Days = styled.div`
 font-size: 1.5rem;
@@ -42,19 +59,25 @@ font-weight: bold;
 
 const ImageDiv = styled.div`
 background-image: url(${anthonyimg});
-width: 300px;
+width: 230px;
+height: 175px;
+margin: auto;
 background-position: -312px -342px;
-margin-left: auto;
+border-radius: 50%;
 `;
 
 
 const Schedules = () => {
     return (
         <BarbersDiv>
+            <HeaderDiv><Header>Meet Our Talented Staff</Header></HeaderDiv>
             <BarbersContainer>
-                <Ladies>
+                
                     <BarbersBox>
-                    <ScheduleDiv>
+                        
+                       
+                        <ImageDiv/>
+                            <InfoDiv>
                             <Name>Jodi</Name>
                             <Days>
                                 S - 8-4 <br/>
@@ -65,11 +88,13 @@ const Schedules = () => {
                                 F - 10-6<br/>
                                 Sa - 8-4
                             </Days>
-                        </ScheduleDiv>
-                        <ImageDiv/>
+                            </InfoDiv>
+                        
+                        
                     </BarbersBox>
                     <BarbersBox>
-                        <ScheduleDiv>
+                        <ImageDiv/>
+                        <InfoDiv>
                             <Name>Natalie</Name>
                             <Days>
                                 S - 8-4 <br/>
@@ -80,14 +105,13 @@ const Schedules = () => {
                                 F - 10-6<br/>
                                 Sa - 8-4
                             </Days>
-                        </ScheduleDiv>
-                        <ImageDiv/>
+                        </InfoDiv>                         
                     </BarbersBox>
-                </Ladies>
-                <Gents>
+                
                     <BarbersBox>
-                    <ScheduleDiv>
-                            <Name>Robbie</Name>
+                        <ImageDiv/>
+                        <InfoDiv>
+                            <Name>Natalie</Name>
                             <Days>
                                 S - 8-4 <br/>
                                 M - off<br/>
@@ -97,12 +121,12 @@ const Schedules = () => {
                                 F - 10-6<br/>
                                 Sa - 8-4
                             </Days>
-                        </ScheduleDiv>
-                        <ImageDiv/>
+                        </InfoDiv>                         
                     </BarbersBox>
                     <BarbersBox>
-                    <ScheduleDiv>
-                            <Name>Rob</Name>
+                        <ImageDiv/>
+                        <InfoDiv>
+                            <Name>Natalie</Name>
                             <Days>
                                 S - 8-4 <br/>
                                 M - off<br/>
@@ -112,10 +136,9 @@ const Schedules = () => {
                                 F - 10-6<br/>
                                 Sa - 8-4
                             </Days>
-                        </ScheduleDiv>
-                        <ImageDiv/>
+                        </InfoDiv>                         
                     </BarbersBox>
-                </Gents>
+               
             </BarbersContainer>
 
         </BarbersDiv>
