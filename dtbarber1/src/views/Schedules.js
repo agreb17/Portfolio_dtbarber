@@ -45,7 +45,7 @@ margin-top: 0;
 `;
 
 const InfoDiv = styled.div`
-
+display: none;
 `;
 
 // const AnotherDiv = styled.div`
@@ -64,6 +64,14 @@ height: 175px;
 margin: auto;
 background-position: -312px -342px;
 border-radius: 50%;
+&:hover + ${InfoDiv} {
+    display: block;
+}
+&:hover {
+    width: 300px;
+    height: 225px;
+}
+
 `;
 
 
@@ -111,7 +119,7 @@ const Schedules = () => {
                     <BarbersBox>
                         <ImageDiv/>
                         <InfoDiv>
-                            <Name>Natalie</Name>
+                            <Name>Robbie</Name>
                             <Days>
                                 S - 8-4 <br/>
                                 M - off<br/>
@@ -126,7 +134,7 @@ const Schedules = () => {
                     <BarbersBox>
                         <ImageDiv/>
                         <InfoDiv>
-                            <Name>Natalie</Name>
+                            <Name>Rob</Name>
                             <Days>
                                 S - 8-4 <br/>
                                 M - off<br/>
