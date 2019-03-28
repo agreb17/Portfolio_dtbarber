@@ -45,7 +45,7 @@ margin-top: 0;
 `;
 
 const InfoDiv = styled.div`
-
+display: none;
 `;
 
 // const AnotherDiv = styled.div`
@@ -64,6 +64,15 @@ height: 175px;
 margin: auto;
 background-position: -312px -342px;
 border-radius: 50%;
+&:hover + ${InfoDiv} {
+    display: block;
+    transition: 2;
+}
+&:hover {
+    width: 300px;
+    height: 225px;
+}
+
 `;
 
 
