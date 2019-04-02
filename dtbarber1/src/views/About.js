@@ -8,8 +8,12 @@ height: 100vh;
 `;
 
 const HeaderDiv = styled.div`
-display: flex;
-justify-content: center;
+width:100%; 
+text-align:center; 
+border-bottom: 1px solid #000; 
+line-height:0.1em; 
+margin:10px 0 20px;
+
 `;
 
 const ContentDiv = styled.div`
@@ -21,8 +25,10 @@ font-size: 1.3rem;
 font-weight: bold;
 `;
 
-const Header = styled.h1`
-height: min-content;
+const Header = styled.div`
+background: #fff;
+padding: 0 10px;
+font-size: 2rem;
 `;
 
 
