@@ -4,7 +4,8 @@ import anthonyimg from "../assets/anthonyg.jpg";
 
 const BarbersDiv = styled.div`
 width: 100%;
-height: 100vh;
+height: 50vh;
+background-color: red;
 `;
 
 const HeaderDiv = styled.div`
@@ -46,6 +47,7 @@ margin-top: 0;
 
 const InfoDiv = styled.div`
 display: none;
+height: fit-content;
 `;
 
 // const AnotherDiv = styled.div`
@@ -66,6 +68,10 @@ background-position: -312px -342px;
 border-radius: 50%;
 &:hover + ${InfoDiv} {
     display: block;
+}
+&:hover + ${BarbersDiv} {
+    height: 100vh;
+    // position: absolute;
 }
 &:hover {
     width: 300px;
