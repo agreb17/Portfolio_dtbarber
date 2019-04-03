@@ -5,15 +5,12 @@ import styled from "styled-components";
 const AboutDiv = styled.div`
 width: 100%;
 height: 100vh;
+background-color: blue;
 `;
 
 const HeaderDiv = styled.div`
 width:100%; 
 text-align:center; 
-border-bottom: 1px solid #000; 
-line-height:0.1em; 
-margin:10px 0 20px;
-
 `;
 
 const ContentDiv = styled.div`
@@ -25,10 +22,7 @@ font-size: 1.3rem;
 font-weight: bold;
 `;
 
-const Header = styled.div`
-background: #fff;
-padding: 0 10px;
-font-size: 2rem;
+const Header = styled.h1`
 `;
 
 
